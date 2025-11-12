@@ -1,0 +1,180 @@
+@media only screen and (max-width:1920px){
+        
+}
+
+@media only screen and (max-width:1880px){
+
+}
+
+@media only screen and (max-width:1800px){}
+
+@media only screen and (max-width:1728px){
+    
+}
+
+@media only screen and (max-width:1700px){
+    
+}
+@media only screen and (max-width:1600px){
+    
+}
+
+@media only screen and (max-width:1536px){
+       
+}
+@media only screen and (max-width:1500px){
+    
+}
+
+@media only screen and (max-width:1440px){
+    :root{
+        --fs-base: 16px; /* Base Value: 16 */
+
+        --fs-h1: 64px;
+        --fs-h2: 56px;
+        --fs-h2--48: 48px
+        --fs-h3: 40px;
+        --fs-h4: 32px;
+        --fs-h5: 24px;
+        --fs-body: 16px;
+        --fs-body-sub: 14px;
+        --fs-body-subSub: 12px;
+        -fs-10px: 11px;
+    }
+
+    .main-wrapper{max-width: calc(1340px - 60px);width:100%;margin:0 auto; padding: 0 30px;}
+    .wrapper1188{max-width: 1188px;width:100%;margin:0 auto;}
+    .wrapper902{max-width: 902px;width:100%;margin:0 auto;}
+    
+
+    .header{padding: 1.13em 0;}
+    .siteLogo{max-width: 112px;}
+    .headMenu > nav > ul{display: flex; gap: 28px;}
+    .headMenu > nav > ul > li a{color: var(--primary-05);font-size: var(--fs-body-subSub); text-transform: uppercase;}
+    .comBtn{width: max-content; display: flex; gap: 8px; padding: 8px 16px; font-size: var(--fs-body-sub); background: var(--primary-gadient); float: left; font-family: var(--primary-font);transition: all .3s; line-height: 1.71; border-radius: 8px; color: var(--primary-02);}
+
+
+    .psFooteBox1{max-width: 341px;width: 100%;}
+    .psFooteBox2{max-width: 123px;width: 100%;}
+    .psFootBox > h3{font-size: var(--fs-body-subSub); line-height: 2;}
+    .psFootBox > ul > li > a{font-size: var(--fs-body-sub); }
+    .psFootBox > ul > li:not(:last-child) {margin-bottom: 12px;}
+    .psFooteBox3{max-width: 195px; width: 100%;}
+    .psFooteBox3 .psCompanyLinks > li{display: flex; gap: 9px; align-items: center;}
+    .psFootBox > .psCompanyLinks > li:not(:last-child) {margin-bottom: 16px;}
+    .psFooteBox3 .psCompanyLinks > li > span{min-width: 10px;}
+    .psFooteBox3 .psCompanyLinks > li > p{font-size: var(--fs-body-sub);}
+    .psFooteBox4{max-width: 345px; width: 100%; height: max-content; padding: 21px 0 21px 24px;}
+    .psFooteBox4 > h3{font-size: var(--fs-32); line-height: normal; margin-bottom: 0;}
+    .psBottomFooter{border-top: 1px solid #5E5E5E; padding: 1.8em 0 2.37em; margin-top: 2.63em;}
+    .psBottomFooter > p{text-align: center; color: var(--primary-02); font-size: var(--fs-10); line-height: 2.4;}
+
+
+    .psHeroSection{padding-top: 5.125em;}
+    
+}
+
+@media only screen and (max-width:1400px){
+    
+}
+
+@media only screen and (max-width:1366px){
+
+}
+
+@media only screen and (max-width:1365px){
+    
+}
+@media only screen and (max-width:1280px){
+    
+
+}
+
+@media only screen and (max-width:1200px){
+    
+}
+
+@media only screen and (max-width:1160px){
+    
+}
+
+@media only screen and (max-width:1100px){  
+    
+}
+
+@media only screen and (max-width:1024px){
+    
+}
+
+@media only screen and (max-width:991px){
+    
+}
+
+@media only screen and (max-width:950px){
+
+}
+
+@media only screen and (max-width: 915px) {
+    
+}
+
+@media only screen and (max-width:820px){
+    
+}
+
+@media only screen and (max-width:768px){
+    
+}
+
+@media only screen and (max-width: 720px){
+    
+}
+
+@media only screen and (max-width: 700px){
+    
+}
+
+
+@media only screen and (max-width:610px){
+    .menuIcon,.menuClose,.showInHamMenu{display: block;}
+    .menuIcon{margin: 0;}
+    .hideInHamMenu{display: none;}
+    .menuCont{opacity: 0;align-items: start;position: fixed;z-index: 99;background-color: white;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;top: 0;right: -9999px;flex-direction: column;height: 100%;width: 100%;max-width: 400px;padding: 1em 1em 1em 2em; transition: all 0.5s;}
+    .menuCont.active{opacity:1;right:0;}
+    .menuSec{justify-content:end;display:flex;align-items:center;gap:2em;}
+    .headMenu > nav > ul{flex-direction:column;margin-bottom:2em;margin-top:3em;}
+    .headRgt{flex-flow:row wrap;}
+
+    .psFooterInfo > *{max-width: 100%;}
+    .psFooteBox1,.psFooteBox2{max-width: calc(50% - 1.4em);}
+}
+
+@media only screen and (max-width:575px){
+    
+}
+
+@media only screen and (max-width:550px){
+    
+}
+
+@media only screen and (max-width:500px){
+
+}
+
+@media only screen and (max-width:410px){
+    
+}
+
+@media only screen and (max-width:400px){
+    
+}
+
+@media only screen and (max-width:380px){
+    
+}
+
+
+@media only screen and (max-width:360px){
+    
+}
+
