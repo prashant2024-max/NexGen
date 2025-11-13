@@ -14,24 +14,26 @@
    --primary-04: #B7B7B7;
    --primary-05: #b0b0b0;
    --primary-06: #f6f6f6;
+   --primary-07: #888888;
 
    --body-text: #d1d1d1;
+   --border: #454545;
 
    /* =====================
       Typography
    ===================== */
    --fs-base: 16px; /* Base Value: 16 */
 
-      --fs-h1: 72px;      
-      --fs-56: 64px;       
-      --fs-48: 56px;      
-      --fs-40: 48px;      
-      --fs-32: 36px;      
-      --fs-24: 28px;       
-      --fs-body: 18px;     
-      --fs-body-sub: 16px; 
-      --fs-body-subSub: 14px; 
-      --fs-10: 12px;
+   --fs-h1: 72px;      
+   --fs-56: 64px;       
+   --fs-48: 56px;      
+   --fs-40: 48px;      
+   --fs-32: 36px;      
+   --fs-24: 28px;       
+   --fs-body: 18px;     
+   --fs-body-sub: 16px; 
+   --fs-body-subSub: 14px; 
+   --fs-10: 12px;
 
 
    /* =====================
@@ -50,7 +52,7 @@
 
 *{-webkit-tap-highlight-color:transparent;}
 html,body{scroll-behavior: smooth; overflow-x: hidden;}
-body{text-rendering:optimizeSpeed;line-height:1.5;font-family:var(--primary-font);font-weight:400; }
+body{text-rendering:optimizeSpeed;line-height:1.5;font-family:var(--primary-font);font-weight:400; background-color: var(--primary-01);}
 body,h1,h2,h3,h4,h5,h6,p,ul,ul li{margin:0;padding:0;}
 *,*::before,*::after{outline:none;box-sizing:border-box;scroll-behavior:smooth;}
 *{margin:0;padding:0;}
@@ -149,15 +151,10 @@ body.menu-open{overflow:hidden;}
 *::-webkit-scrollbar-track{background:var(--gray-200);}
 *::-webkit-scrollbar-thumb{background-color:var(--primary-950);border-radius:10px;border:3px solid #ffffff;}
 
-.comBtn{width: max-content; display: flex; gap: 8px; padding: 8px 16px; font-size: 14px; background: var(--primary-gadient); float: left; font-family: var(--primary-font);transition: all .3s; line-height: 1.71; border-radius: 8px; color: var(--primary-02);}
+.comBtn{width: max-content; display: flex; align-items: center; gap: 8px; padding: 8px 16px; font-size: 14px; background: var(--primary-gadient); float: left; font-family: var(--primary-font);transition: all .3s; line-height: 1.71; border-radius: 8px; color: var(--primary-02);}
 .comBtn{width: max-content; display: flex; gap: 8px; padding: 8px 16px; font-size: 14px; background: var(--primary-gadient); float: left; font-family: var(--primary-font);transition: all .3s; line-height: 1.71; border-radius: 8px; color: var(--primary-02);}
 .comBtn:hover{box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
-.comBtnHollow{width: max-content; padding: 12px 16px; font-size: var(--fs-body); font-weight: var(--fw-semi-bold); letter-spacing: 0.005em; border-radius: 8px; color: var(--primary-950); border: 1px solid var(--gray-700) !important; float: left; font-family: var(--primary-font);transition: all .3s;}
+.comBtnHollow{width: max-content; display: flex; align-items: center; gap: 8px; padding: 8px 16px; font-size: 14px; background: transparent; float: left; font-family: var(--primary-font);transition: all .3s; line-height: 1.71; border-radius: 8px; color: var(--primary-07); border: 1px solid var(--primary-07) !important;}
 .comBtnHollow:hover{box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
 .comBtn.gray{background-color: #E4E4E4;border: 1px solid #ECECEC;}
 
-/* Tabbing */
-/* .tab-content{display: none;}
-.tab-content.active{display: flex;}
-.tabBtns .tabBtn{font-size: var(--fs-body);color: var(--gray-600);text-transform: capitalize;padding: 0.625em;width: max-content;white-space: nowrap;cursor: pointer;}
-.tabBtns .tabBtn.active{font-size: var(--fs-sh);color: var(--black);font-weight: var(--fw-medium);border-bottom: 2px solid var(--black);} */

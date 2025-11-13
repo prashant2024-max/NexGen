@@ -1,5 +1,5 @@
 /* Header */
-.header{padding: 0.8em 0; position: fixed; top: 0; z-index: 1000; transition: all 0.3s ease; background: rgba(0, 0, 0, 0.001); backdrop-filter: blur(10px);}
+.header{padding: 0.8em 0; position: fixed; top: 0; z-index: 1000; transition: all 0.3s ease; background: rgba(0, 0, 0, 0.001); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border);}
 .headerSec{display: flex; justify-content: space-between; align-items: center;}
 .siteLogo{max-width: 175px;}
 .headMenu > nav{margin: auto;}
@@ -14,7 +14,6 @@
 .mainBody{padding-top:128px;}
 
 
- 
 /* ==== page common banner */
 .psComPageHead{background-repeat: no-repeat; background-size: cover; background-position: center; padding: 7.93em 0 6.687em;}
 .psComPageInfo{max-width: 717px; width: 100%;}
@@ -28,6 +27,7 @@
 .psFootBox{max-width: calc(20% - 1em); width: 100%;}
 .psFooteBox4{border-left: 1px solid var(--primary-02);}
 .psFootBox > h3{color: var(--primary-02); font-weight: var(--fw-medium); margin-bottom: 2em; text-transform: capitalize;}
+
 
 .psFootBox > ul > li > a, .psFooteBox3 .psCompanyLinks > li > p{color: var(--body-text); line-height: 1.45;}
 .psFooteBox1{max-width: 341px;width: 100%;}
@@ -46,5 +46,60 @@
 .psBottomFooter > p{text-align: center; color: var(--primary-02); font-size: var(--fs-10); line-height: 2.4;}
 
 
-
 .psHeroSection{background-image: url('../images/heroBgImg.png');background-repeat: no-repeat;background-position: center; background-size: cover; padding-top: 5em;}
+.psHeroTxt{max-width: 800px; width: 100%; padding-top: 5.625em; padding-bottom: 2.625em;}
+.psHeroTxt > h1{font-size: var(--fs-h1); line-height: 1.3; color: var(--primary-02); margin-bottom: 24px;}
+.psHeroTxt > h1 > span{color: var(--primary-03);}
+.psHeroTxt > p{max-width: 603px; font-size: var(--fs-body); color: var(--body-text); text-align: justify; border-top: 1px solid var(--border); padding-top: 1.5em;}
+.psHeroBtn{display: flex; gap: 8px; margin-top: 2.5em;}
+.psHeroLogo{padding: 2.0938em 8.23em; backdrop-filter: blur(20px); border-top:1px solid var(--border);}
+.heroLogoMarquee{padding: 0 5em;}
+.heroLogoMarquee .slick-list .slick-track{display: flex; align-items: center;}
+/* .heroLogoMarquee li.slick-slide{margin-inline: 70px; min-height: 52px;} */
+.heroLogoMarquee li.slick-slide img{height: 75px; width: max-content; margin: auto;}
+
+
+.psEnergyInnov{padding: 5em 0; background-image: url('../images/energyInnovBg.png'); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.energyInnovInfo {display: flex;justify-content: space-between;}
+.energyInnovHead{max-width: 33%;}
+.energyInnovHead h2{font-size: var(--fs-48); line-height: 64px; color: var(--primary-02);}
+.energyInnovDesc{max-width: 67%; padding-left: 2.5em; margin-left: 2.5em; border-left: 1px solid var(--border);}
+.energyInnovDesc p{font-size: var(--fs-body); color: var(--body-text); line-height: 25.6px; text-align: justify;}
+
+
+.psSolutionArea{background-image: url('../images/solutionAreabg.png'); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.grid-wrapper {display: grid;grid-gap: 20px;grid-template-columns: repeat(auto-fit, minmax(176px, 2fr));grid-auto-rows: 280px;grid-auto-flow: dense;isolation: isolate;}
+.grid-wrapper .tall {grid-column: span 2; grid-row: span 2;isolation: isolate; border-radius: 20px; overflow: hidden;}
+.grid-wrapper .wide {grid-column: span 5;isolation: isolate; border-radius: 20px; overflow: hidden;}
+.grid-wrapper .middle {grid-column: span 3 !important;isolation: isolate; border-radius: 20px; overflow: hidden;}
+.grid-wrapper > div > img {width: 100%;height: 100%;object-fit: cover;border-radius: 5px;}
+.techGallInfo{width: 100%; height: 100%; position: absolute; inset: 0; z-index:999; padding: 2.5em; display: flex;flex-direction: column; justify-content: space-between;}
+.textLogo {max-width: 56px; padding: 11.2px; background: rgba(49, 49, 49, 0.4); border-radius: 11.2px; backdrop-filter: blur(10px);}
+.psBottomTxt h3{font-size: var(--fs-24); font-weight: var(--fw-bold); color: var(--primary-03); line-height: 1.27; margin-bottom: 16px;}
+.psBottomTxt p{font-size: var(--fs-body); line-height: 1.3; color: var(--body-text);}
+.grid-wrapper .middle .techGallInfo{display: flex; align-items: center; justify-content: center;}
+.grid-wrapper .middle .techGallInfo .psBottomTxt{min-height: 209px; border-radius: 20px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid #454545; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 66px;}
+.grid-wrapper .middle .techGallInfo .psBottomTxt h3{font-size: var(--fs-40); font-weight: var(--fw-bold); text-align: center; text-transform: capitalize;}
+.grid-wrapper .middle .techGallInfo .psBottomTxt p{text-align: center; line-height: 1.59; font-size: var(--fs-body);}
+
+
+.psPowerDevCard{background-color: var(--primary-01);}
+.powerDevCardBox{display: flex; justify-content: space-between;}
+.powerDevCardItem{max-width: 33.33%; width: 100%;}
+.powerDevCardItem:nth-child(1){padding-right: 53px;}
+.powerDevCardItem:nth-child(2){padding: 0 53px; border-left: 1px solid var(--border); border-right: 1px solid var(--border);}
+.powerDevCardItem:nth-child(3){padding-left: 53px;}
+.powerDevCardImg{max-width: 56px; padding: 11.2px; background: rgba(49, 49, 49, 0.4); backdrop-filter: blur(10px); border-radius: 8px; margin-bottom: 2.5em;}
+.powerDevCardText h3{font-size: var(--fs-24); font-weight: var(--fw-medium); color: var(--primary-03); line-height: 1.27em; margin-bottom: 16px;}
+.powerDevCardText p{font-size: var(--fs-body); line-height: 20.8px; color: var(--body-text);}
+
+
+.psContactForm{background-image: url('../images/contactBg.png'); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.psContactInfoBox{display: flex; justify-content: space-between;}
+.contactTxtBox{max-width:40%; width: 100%;}
+.contactTxtBox h2{font-size: var(--fs-40); line-height: 52px; letter-spacing: 0.78px; color: var(--primary-02); font-weight: var(--fw-normal); margin-bottom: 29px;} 
+.contactWebs li{font-size: var(--fs-body); line-height: 25px; color: var(--primary-02);}
+.contactWebs li:not(:last-child){padding-bottom: 16px; margin-bottom: 16px; border-bottom: 1px solid var(--primary-02);}
+.contactWebs li span:nth-of-type(1){font-weight: var(--fw-bold);}
+.contactWebs li span a{color: var(--primary-02);}
+.contactFormBox{max-width: 55%; width: 100%;}
