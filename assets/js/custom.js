@@ -38,7 +38,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 3000,
+    speed: 3500,
     cssEase: "linear",
     infinite: true,
     arrows: false,
@@ -47,24 +47,24 @@ $(document).ready(function () {
     variableWidth: false,
     responsive: [
       {
-        breakpoint: 1400,
+        breakpoint: 1366,
         settings: { slidesToShow: 5 },
       },
       {
-        breakpoint: 1300,
-        settings: { slidesToShow: 4 },
+        breakpoint: 1280,
+        settings: { slidesToShow: 5 },
       },
       {
         breakpoint: 850,
         settings: { slidesToShow: 4 },
       },
       {
-        breakpoint: 611,
-        settings: { slidesToShow: 3 },
+        breakpoint: 601,
+        settings: { slidesToShow: 4 },
       },
       {
         breakpoint: 500,
-        settings: { slidesToShow: 2 },
+        settings: { slidesToShow: 3 },
       },
     ],
   });

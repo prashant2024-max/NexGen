@@ -22,7 +22,7 @@
 
 
 /* ==== footer ==== */
-.psFooter{padding-top: 5.8em;background: var(--primary-01);}
+.psFooter{padding-top: 60px;background: var(--primary-01);}
 .psFooterInfo{display: flex; justify-content: space-between;}
 .psFootBox{max-width: calc(20% - 1em); width: 100%;}
 .psFooteBox4{border-left: 1px solid var(--primary-02);}
@@ -61,7 +61,7 @@
 
 .psEnergyInnov{padding: 5em 0; background-image: url('../images/energyInnovBg.png'); background-size: cover; background-repeat: no-repeat; background-position: center;}
 .energyInnovInfo {display: flex;justify-content: space-between;}
-.energyInnovHead{max-width: 33%;}
+.energyInnovHead{max-width: 33%; display: flex; align-items: center;}
 .energyInnovHead h2{font-size: var(--fs-48); line-height: 64px; color: var(--primary-02);}
 .energyInnovDesc{max-width: 67%; padding-left: 2.5em; margin-left: 2.5em; border-left: 1px solid var(--border);}
 .energyInnovDesc p{font-size: var(--fs-body); color: var(--body-text); line-height: 25.6px; text-align: justify;}

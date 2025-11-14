@@ -40,7 +40,7 @@
         --fs-body: 16px;
         --fs-body-sub: 14px;
         --fs-body-subSub: 12px;
-        -fs-10: 10px;
+        --fs-10: 10px;
     }
 
     .main-wrapper{max-width: calc(1340px - 60px);width:100%;margin:0 auto;}
@@ -54,6 +54,7 @@
     .headMenu > nav > ul > li a{color: var(--primary-05);font-size: var(--fs-body-subSub); text-transform: uppercase;}
     .comBtn{width: max-content; display: flex; gap: 8px; padding: 8px 16px; font-size: var(--fs-body-sub); background: var(--primary-gadient); float: left; font-family: var(--primary-font);transition: all .3s; line-height: 1.71; border-radius: 8px; color: var(--primary-02);}
 
+    .psFooter{padding-top: 31px;}
     .psFooteBox1{max-width: 341px;width: 100%;}
     .psFooteBox2{max-width: 123px;width: 100%;}
     .psFootBox > h3{font-size: var(--fs-body-subSub); line-height: 2;}
@@ -73,7 +74,7 @@
     .psHeroTxt{max-width: 639px; padding-top: 2.81em; padding-bottom: 2.625em;}
     .psHeroTxt > p{max-width: 442px; line-height: 25px;}
     .psHeroLogo{padding: 17px 0;}
-    .heroLogoMarquee {padding: 0 0; max-width: 1188px; margin: auto;}
+    .heroLogoMarquee {padding: 0 0; max-width: 1280px; margin: auto;}
 
     .psEnergyInnov{padding: 58px 0;}
     .energyInnovHead {max-width: 418px;}
@@ -95,23 +96,45 @@
 }
 
 @media only screen and (max-width:1366px){
-
+    .powerDevCardItem:first-child .powerDevCardText {padding-right: 0px;}
 }
 
 @media only screen and (max-width:1365px){
     
 }
 @media only screen and (max-width:1280px){
-    
+    .main-wrapper{padding: 0 30px;}
 
 }
 
 @media only screen and (max-width:1200px){
-    
+    :root {
+        --fs-base: 16px; /* Base Value: 16 */
+
+        --fs-h1: 58px;
+        --fs-56: 52px;
+        --fs-48: 44px;
+        --fs-40: 36px;
+        --fs-32: 30px;
+        --fs-24: 22px;
+
+        --fs-body: 16px;
+        --fs-body-sub: 14px;
+        --fs-body-subSub: 12px;
+        --fs-10: 10px;
+    }
+
+    .psHeroTxt > p {max-width: 475px;}
+
+    .techGallInfo{padding: 1.5em;}
+    .grid-wrapper .middle .techGallInfo .psBottomTxt{padding: 0 20px;}
+
+    .contactTxtBox {max-width: 40%;}
+    .contactFormBox {max-width: 55%;}
 }
 
-@media only screen and (max-width:1160px){
-    
+@media only screen and (max-width:1180px){
+    .grid-wrapper {grid-template-columns: repeat(auto-fit, minmax(107px, 2fr));}
 }
 
 @media only screen and (max-width:1100px){  
@@ -121,7 +144,30 @@
 }
 
 @media only screen and (max-width:1024px){
-    
+    :root {
+        --fs-base: 16px; /* Base Value: 16 */
+
+        --fs-h1: 52px;
+        --fs-56: 46px;
+        --fs-48: 38px;
+        --fs-40: 32px;
+        --fs-32: 26px;
+        --fs-24: 18px;
+
+        --fs-body: 16px;
+        --fs-body-sub: 14px;
+        --fs-body-subSub: 12px;
+        --fs-10: 10px;
+    }
+
+    .energyInnovHead {max-width: 36%;}
+
+    .powerDevCardItem:nth-child(1){padding-right: 35px;}
+    .powerDevCardItem:nth-child(2){padding: 0 35px;}
+    .powerDevCardItem:nth-child(3){padding-left: 53px;}
+
+    .contactTxtBox {max-width: 45%;}
+    .contactFormBox {max-width: 50%;}
 }
 
 @media only screen and (max-width:991px){
@@ -137,28 +183,60 @@
 }
 
 @media only screen and (max-width:820px){
+    :root {
+        --fs-base: 16px; /* Base Value: 16 */
+
+        --fs-h1: 48px;
+        --fs-56: 42px;
+        --fs-48: 36px;
+        --fs-40: 30px;
+        --fs-32: 26px;
+        --fs-24: 18px;
+
+        --fs-body: 16px;
+        --fs-body-sub: 14px;
+        --fs-body-subSub: 12px;
+        --fs-10: 10px;
+
+        --secGap: 50px;
+    }
+
     .psFooterInfo {flex-wrap: wrap; row-gap: 20px;}
     .psFooteBox1, .psFooteBox2, .psFooteBox3{max-width: 32%;}
     .psFooteBox2{padding-left: 6%;}
     .psFooteBox4{max-width: 100%; border: none; padding-left: 0;}
+    
+    .psEnergyInnov {padding: 50px 0;}
+
+    .energyInnovInfo{flex-wrap: wrap;}
+    .energyInnovHead {max-width: 100%;}
+    .energyInnovDesc {max-width: 100%; padding: 0; margin: 0; margin-top: 1.5em; border: none;}
+
+    .grid-wrapper{grid-template-columns: repeat(auto-fit, minmax(90px, 2fr));}
+
+    .powerDevCardBox {flex-wrap: wrap;}
+    .powerDevCardBox{ row-gap: 30px;}
+    .powerDevCardItem {max-width: calc(50% - 20px);width: 100%;}
+    .powerDevCardItem:nth-child(1) {padding-right: 0px;}
+    .powerDevCardItem:nth-child(2) {padding: 0px; border: none;}
+    .powerDevCardItem:nth-child(3) {padding: 0px;}
+    .powerDevCardImg{margin-bottom: 1.5em;}
+
+    .psContactInfoBox{flex-wrap: wrap; gap: 30px;}
+    .contactTxtBox{max-width: 53%;}
+    .contactFormBox{max-width: 100%;}
+}
+
+
+@media only screen and (max-width: 810px){
+    .grid-wrapper .tall{grid-column: span 3; grid-row: span 1;}
+    .grid-wrapper .wide{grid-column: span 4;}
+    .grid-wrapper .middle{grid-column: span 7 !important;}
+    .grid-wrapper .middle .techGallInfo{padding: 0;}
+    .grid-wrapper .middle .techGallInfo .psBottomTxt{height: 100%;}
 }
 
 @media only screen and (max-width:768px){
-    :root{
-        --fs-base: 16px; /* Base Value: 16 */
-
-        --fs-h1: 52px;
-        --fs-56: 48px;
-        --fs-48: 40px;
-        --fs-40: 34px;
-        --fs-32: 28px;
-        --fs-24: 20px;
-        --fs-body: 16px;
-        --fs-body-sub: 14px;
-        --fs-body-subSub: 12px;
-        -fs-10: 10px;
-    }
-
     .psFooter{padding-top: 3.125em;}
 }
 
@@ -189,6 +267,15 @@
     .psFooteBox1,.psFooteBox2, .psFooteBox3{max-width: calc(32% - 1em);}
     .psFooteBox2{padding-left: 0;}
     .psFooteBox4{padding: 20px; max-width: 100%;}
+
+    .energyInnovHead h2{line-height: 50px;}
+
+    .grid-wrapper {grid-template-columns: repeat(auto-fit, minmax(80px, 2fr));}
+    .grid-wrapper .tall {grid-column: span 7;grid-row: span 2;}
+    .grid-wrapper .wide {grid-column: span 7;}
+
+    .powerDevCardItem {max-width: 100%;width: 100%;}
+    .contactTxtBox {max-width: 100%;}
 }
 
 @media only screen and (max-width:575px){
@@ -204,7 +291,7 @@
         --fs-body: 16px;
         --fs-body-sub: 14px;
         --fs-body-subSub: 12px;
-        -fs-10: 10px;
+        --fs-10: 10px;
     }
 
     .psFooterInfo {row-gap: 30px;}
@@ -219,7 +306,9 @@
 }
 
 @media only screen and (max-width:500px){
+    .psHeroBtn{flex-wrap: wrap; justify-content: center; gap: 20px;}
 
+    .grid-wrapper {grid-template-columns: repeat(auto-fit, minmax(74px, 2fr));}
 }
 
 @media only screen and (max-width:410px){
@@ -230,6 +319,10 @@
     .psFooteBox1, .psFooteBox2, .psFooteBox3, .psFooteBox4 {max-width: 100%;}
     .psFootLogo {max-width: 160px;}
     .psFooteBox4{border: none; padding: 0;}
+
+    .grid-wrapper {grid-template-columns: repeat(auto-fit, minmax(71px, 2fr));}
+
+    .contactFormBox{padding: 1.5em;}
 }
 
 @media only screen and (max-width:380px){
@@ -238,6 +331,13 @@
 
 
 @media only screen and (max-width:360px){
-    
+    .grid-wrapper {grid-template-columns: repeat(auto-fit, minmax(45px, 2fr));}
 }
+
+@media only screen and (max-width:330px){
+    .grid-wrapper {grid-template-columns: repeat(auto-fit, minmax(28px, 2fr));}
+}
+
+
+
 
