@@ -75,7 +75,7 @@
 .grid-wrapper > div > img {width: 100%;height: 100%;object-fit: cover;border-radius: 5px;}
 .techGallInfo{width: 100%; height: 100%; position: absolute; inset: 0; z-index:999; padding: 2.5em; display: flex;flex-direction: column; justify-content: space-between;}
 .textLogo {max-width: 56px; padding: 11.2px; background: rgba(49, 49, 49, 0.4); border-radius: 11.2px; backdrop-filter: blur(10px);}
-.psBottomTxt h3{font-size: var(--fs-24); font-weight: var(--fw-bold); color: var(--primary-03); line-height: 1.27; margin-bottom: 16px;}
+.psBottomTxt h3{font-size: var(--fs-24); font-weight: var(--fw-bold); color: var(--primary-03); line-height: 1.27; margin-bottom: 16px; font-weight: var(--fw-extra-bold);}
 .psBottomTxt p{font-size: var(--fs-body); line-height: 1.3; color: var(--body-text);}
 .grid-wrapper .middle .techGallInfo{display: flex; align-items: center; justify-content: center;}
 .grid-wrapper .middle .techGallInfo .psBottomTxt{min-height: 209px; border-radius: 20px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid #454545; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 66px;}
@@ -95,11 +95,33 @@
 
 
 .psContactForm{background-image: url('../images/contactBg.png'); background-size: cover; background-repeat: no-repeat; background-position: center;}
-.psContactInfoBox{display: flex; justify-content: space-between;}
+.psContactInfoBox{display: flex; justify-content: space-between; align-items: center;}
 .contactTxtBox{max-width:40%; width: 100%;}
-.contactTxtBox h2{font-size: var(--fs-40); line-height: 52px; letter-spacing: 0.78px; color: var(--primary-02); font-weight: var(--fw-normal); margin-bottom: 29px;} 
+.contactTxtBox h2{font-size: var(--fs-40); line-height: 52px; letter-spacing: 0.78px; color: var(--primary-02); font-weight: var(--fw-normal); margin-bottom: 29px; text-transform: uppercase;} 
 .contactWebs li{font-size: var(--fs-body); line-height: 25px; color: var(--primary-02);}
 .contactWebs li:not(:last-child){padding-bottom: 16px; margin-bottom: 16px; border-bottom: 1px solid var(--primary-02);}
 .contactWebs li span:nth-of-type(1){font-weight: var(--fw-bold);}
 .contactWebs li span a{color: var(--primary-02);}
-.contactFormBox{max-width: 55%; width: 100%;}
+.contactFormBox{max-width: 55%; width: 100%; background: rgba(18, 18, 18, 0.6); backdrop-filter: blur(10px); padding: 2.5em; border-radius: 20px;}
+.contactInputItem {display: flex; flex-direction: column; gap: 14px;}
+.contactInputItem:not(:last-child){margin-bottom: 1.5em;}
+.contactInputItem label{font-size: var(--fs-body); color: var(--primary-02); text-transform: uppercase;}
+.contactInputItem input, .contactInputItem textarea{font-size: var(--fs-body-sub); color: var(--primary-02); padding: 13px 11px; border: 1px solid var(--border); border-radius: 8px; background-color: transparent; font-family: var(--primary-font);}
+.contactInputItem input::placeholder,
+.contactInputItem input::-webkit-input-placeholder {text-transform: uppercase;font-weight: var(--fw-light); font-size: var(--fs-body-sub);}
+.countrySelectInp input{padding-left: 85px;}
+.selectCountryBox {width: max-content; position: absolute; inset: 0; height: 100%; display: flex; align-items: center; padding-left: 11px;}
+.selectCountry {max-width: max-content; height: 100%; position: absolute; top: 0;left: 11px; cursor: pointer; display: flex;align-items: center;}
+.selectCountry .selectPlaceholder, .selectCountry li{display: flex; align-items: center;}
+.selectCountry li img{max-width: 20px;}
+.selectCountry .selectPlaceholder span{color: #fff; font-size: var(--fs-body-sub); height: 65%; display: flex;align-items: center;}
+.selectCountry .selectPlaceholder span:nth-of-type(1){display: flex; gap: 3px; align-items: center; padding-right: 7px; margin-right: 5px; border-right: 1px solid var(--border); max-width: max-content;}
+
+.selectPlaceholder{height: 100%;}
+.selectPlaceholder span img{max-width: 20px;width: 100%;display: block;}
+.selectPlaceholder span:nth-of-type(1){display: block;}
+.selectOptions {display: none; position: absolute; top: calc(100% + 6px);left: 0; background: #000;border: 1px solid var(--border); padding: 6px 0; border-radius: 6px; min-width: max-content; z-index: 999;}
+.selectOption {padding: 8px 12px; display: flex; align-items: center; gap: 8px;}
+.selectOption:hover {background: rgba(255,255,255,0.1);}
+.selectOption span{color: var(--primary-02);}
+.psContactBtn{padding: 8px 33px;}

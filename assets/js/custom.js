@@ -31,9 +31,6 @@ $(document).ready(function () {
     $(".menu-overlay").remove();
   });
 
-  
-
-  
 
   // Home Partners and Supporters Marquee
   $(".heroLogoMarquee").slick({
@@ -71,6 +68,28 @@ $(document).ready(function () {
       },
     ],
   });
+
+
+
+  // toggle dropdown
+  $(".selectPlaceholder").on("click", function (e) {
+    e.stopPropagation();
+    $(this).next(".selectOptions").toggle();
+  });
+
+  // select option
+  $(".selectOption").on("click", function () {
+    $(this).closest(".selectCountry").find(".selectPlaceholder").html($(this).html());
+    $(".selectOptions").hide();
+  });
+
+  // click outside closes
+  $(document).on("click", function () {
+    $(".selectOptions").hide();
+  }); 
+
+
+
 
 
   $(".psProductImg").slick({
