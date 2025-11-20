@@ -31,7 +31,7 @@
 
 .psFootBox > ul > li > a, .psFooteBox3 .psCompanyLinks > li > p{color: var(--body-text); line-height: 1.45;}
 .psFooteBox1{max-width: 341px;width: 100%;}
-.psFooteBox2{max-width: 123px;width: 100%;}
+.psFooteBox2{max-width: 150px;width: 100%;}
 .psFootBox > h3{font-size: var(--fs-body-subSub); line-height: 2;}
 .psFootBox > ul > li > a{font-size: var(--fs-body-sub); }
 .psFootBox > ul > li:not(:last-child) {margin-bottom: 12px;}
@@ -101,14 +101,15 @@
 .contactWebs li{font-size: var(--fs-body); line-height: 25px; color: var(--primary-02);}
 .contactWebs li:not(:last-child){padding-bottom: 16px; margin-bottom: 16px; border-bottom: 1px solid var(--primary-02);}
 .contactWebs li span:nth-of-type(1){font-weight: var(--fw-bold);}
-.contactWebs li span a{color: var(--primary-02);}
+.contactWebs li span a{color: var(--body-text);}
 .contactFormBox{max-width: 55%; width: 100%; background: rgba(18, 18, 18, 0.6); backdrop-filter: blur(10px); padding: 2.5em; border-radius: 20px;}
 .contactInputItem {display: flex; flex-direction: column; gap: 14px;}
 .contactInputItem:not(:last-child){margin-bottom: 1.5em;}
 .contactInputItem label{font-size: var(--fs-body); color: var(--primary-02); text-transform: uppercase;}
 .contactInputItem input, .contactInputItem textarea{font-size: var(--fs-body-sub); color: var(--primary-02); padding: 13px 11px; border: 1px solid var(--border); border-radius: 8px; background-color: transparent; font-family: var(--primary-font);}
 .contactInputItem input::placeholder,
-.contactInputItem input::-webkit-input-placeholder {text-transform: uppercase;font-weight: var(--fw-light); font-size: var(--fs-body-sub);}
+.contactInputItem input::-webkit-input-placeholder,
+.contactInputItem textarea::placeholder {text-transform: uppercase;font-weight: var(--fw-light); font-size: var(--fs-body-sub);}
 .countrySelectInp input{padding-left: 85px;}
 .selectCountryBox {width: max-content; position: absolute; inset: 0; height: 100%; display: flex; align-items: center; padding-left: 11px;}
 .selectCountry {max-width: max-content; height: 100%; position: absolute; top: 0;left: 11px; cursor: pointer; display: flex;align-items: center;}
@@ -125,3 +126,96 @@
 .selectOption:hover {background: rgba(255,255,255,0.1);}
 .selectOption span{color: var(--primary-02);}
 .psContactBtn{padding: 8px 33px;}
+
+
+.psAboutHeroSec{background-image: url('../images/aboutHeadBg.png');}
+.psAboutHeroSec .psHeroTxt{max-width: 936px;}
+.psAboutHeroSec .psHeroTxt h1{font-weight: var(--fw-light); line-height: 1.15; margin-bottom: 24px;}
+.psAboutHeroSec .psHeroTxt p{max-width: 100%; text-align: left; border: none; padding: 0;}
+
+.psFoundPartInfo{padding: 2.93em 0 5em; background-image: url('../images/foundPartBg.png'); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.psFoundingHead{margin-bottom: 2.5em;}
+.psFoundingHead h2{font-size: var(--fs-h1); color: var(--primary-02); line-height: 1.15; font-weight: var(--fw-extra-bold);}
+.psFoundPartType{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.foundPartItem{max-width: calc(50% - 8px); background: var(--primary-01); border-radius: 15px; border: 1px solid var(--border); padding: 2.5em;}
+.foundPartItemLogo{max-width: 140px; width: 100%; margin-bottom: 30px;}
+.foundPartText h3{font-size: var(--fs-40); line-height: 1.2; color: var(--primary-02); font-weight: var(--fw-light); margin-bottom: 40px;}
+.foundPartText p{font-size: var(--fs-body); line-height: 26px; color: var(--body-text);}
+.psEnergyAssetHead{margin: 3.75em auto;}
+.psEnergyAssetHead h2{font-size: var(--fs-h1); color: var(--primary-02); line-height: 1.15; font-weight: var(--fw-extra-bold); text-align: center; margin-bottom: 24px;}
+.psEnergyAssetHead p{font-size: var(--fs-body); line-height: 26px; color: var(--body-text); text-align: center; padding: 0 140px;}
+.psEnergyAssetsBox{display: flex; justify-content: space-between; flex-wrap: wrap;}
+.psEnergyAssetsItem{max-width: calc(50% - 16px); border-radius: 15px; border: 1px solid var(--border); padding: 2.5em; background-size: cover; background-repeat: no-repeat; background-position: center;}
+.energyAsset1{background-image: url('../images/energyAssetBg1.png');}
+.energyAsset2{background-image: url('../images/energyAssetBg2.png');}
+.psEnergyAssetsItem h3{font-size: var(--fs-32); line-height: 1.3; color: var(--primary-02); font-weight: var(--fw-light); margin-bottom: 24px;}
+.psEnergyAssetsItem ul{list-style-type: disc; padding-left: 30px;}
+.psEnergyAssetsItem ul li{color: var(--primary-02); font-weight: var(--fw-regular); font-size: var(--fs-body); color: var(--body-text); line-height: 26px;}
+.psEnergyAssetsItem ul li:not(:last-child){margin-bottom: 24px;}
+.psEnergyAssetsItem ul li span{font-weight: var(--fw-bold);}
+
+.psEcosystem{padding: 3.75em 0 3.75em; background-image: url('../images/ecosystemBg.png'); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.psEcoHead h2{font-size: var(--fs-48); font-weight: var(--fw-regular); line-height: 1.15; color: var(--primary-02); text-align: center;}
+.psEcoText{margin-top: 2.5em;}
+.psEcoText p{text-align: center; color: var(--primary-02); font-size: var(--fs-body); line-height: 26px; font-weight: var(--fw-regular);}
+.energyFlowPic{margin-top: 2em;}
+.energyFlowPic h3{font-size: 24px; line-height: 26px; font-weight: var(--fw-bold); line-height: 26px; color: var(--primary-02); text-align: center;}
+
+.psAboutSlider{background-image: url('../images/aboutSlidebg.png'); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.aboutSliderItem{padding: 0 25px; position: relative;}
+.aboutSliderItem::after{content: ""; width: 100%;  height: 200%; border-right: 1px solid var(--border); position: absolute; inset: 0; right: 0;}
+.absliderImg{ margin-bottom: 24px; }
+.absliderImg img{max-width: 80px;margin: auto;}
+.aboutSliderItem h3{font-size: var(--fs-24); color: var(--primary-03); line-height: 32px; margin-bottom: 16px; text-align: center; font-weight: var(--fw-semi-bold); text-transform: uppercase;}
+.aboutSliderItem p{font-size: var(--fs-body); line-height: 26px; color: var(--body-text); text-align: center;}
+
+.solutionHeroSec{background-image: url('../images/ourSolBg.png');}
+.solutionHeroSec .psHeroTxt{max-width: 1007px; width: 100%;}
+.solutionHeroSec .psHeroTxt h1 {font-weight: var(--fw-light);line-height: 1.15;margin-bottom: 24px;}
+.solutionHeroSec .psHeroTxt > p{max-width: 100%;padding: 0; border: none;}
+.psSolOurProject{background-image: url('../images/ourProBg.png');}
+.solProHead{margin-bottom: 2.5em;}
+.solProHead h2{font-size: var(--fs-40); font-weight: var(--fw-bold); color: var(--primary-03); line-height: 104px;}
+.solProHead p{font-size: var(--fs-body); line-height: 26px; color: var(--body-text); max-width: 890px; width: 100%;}
+.projectInfoBOx ul li{display: flex; justify-content: space-between; background: #111111; padding: 31px 40px; border-radius: 15px;}
+.projectInfoBOx ul li:not(:last-child){margin-bottom: 40px;}
+.proHeadDesk{max-width: 800px; width: 100%; display: flex; justify-content: space-between; align-items: center;}
+.proHeadDesk .proHeadLine{max-width: 300px; width: 100%; padding-right: 24px;}
+.proHeadDesk h3{max-width: 280px; width: 100%; color: var(--primary-03); font-size: var(--fs-24); line-height: 31px; font-weight: var(--fw-semi-bold); text-transform: uppercase;}
+.proHeadDesk .proHeadText{padding: 10px 0 10px 24px; border-left: 1px solid var(--primary-02);}
+.proHeadDesk p{font-size: var(--fs-body); text-transform: uppercase; color: var(--primary-02); line-height: 26px;}
+.ourProImg{max-width: 250px; width: 100%; border-radius: 16px;}
+.ourProImg img{width: 100%; border-radius: 16px;scale: 1; position: absolute; bottom: 0; opacity: 0; transition: all 0.5s linear;}
+.projectInfoBOx ul li:hover .ourProImg img{scale: 1.2; opacity: 1;}
+.ourProBtn{max-width: max-content; margin-left: 20px;}
+
+.psOurSolCardSec{padding: 100px 0;}
+.OurSolCardBox {display: flex;justify-content: space-between;}
+.OurSolCardItem:not(:last-child){padding-right: 40px; margin-right: 40px; border-right: 1px solid var(--border);}
+.OurSolCardImg {max-width: 56px;padding: 11.2px; background: rgba(49, 49, 49, 0.4); backdrop-filter: blur(10px); border-radius: 8px; margin-bottom: 2.5em;}
+.OurSolCardText h3 { font-size: var(--fs-24); font-weight: var(--fw-medium); color: var(--primary-03); line-height: 1.27em; margin-bottom: 16px;}
+.OurSolCardText p {font-size: var(--fs-body); line-height: 20.8px; color: var(--body-text);}
+
+.psSolPortfolio{background-image: url('../images/solPortBg.png'); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.psPortHeadBox h2{font-size: var(--fs-56); color: var(--primary-02); line-height: 83px; font-weight: var(--fw-extra-bold); margin-bottom: 24px;}
+.psPortHeadBox p{max-width: 883px; width: 100%; font-size: var(--fs-body); color: var(--body-text); line-height: 26px;}
+.psPortHeadBox p:not(:last-child){margin-bottom: 16px;}
+
+.psDriveEnergy{padding:5em 0  ; background-image: url('../images/driveEnergyBg.png'); background-size: cover; background-repeat: no-repeat; background-position: center;}
+.driveEnergyInfoBox{display: flex; justify-content: space-between; align-items: center;}
+.driveEnergyHead{max-width: 470px; width: 100%;}
+.driveEnergyHead h2{font-size: var(--fs-48); color: var(--primary-02); line-height: 64px; font-weight: var(--fw-regular);}
+.driveEnergyDisc{max-width: 100%; width: 100%; padding-left: 60px; margin-left: 50px; border-left: 1px solid var(--border);}
+.driveEnergyDisc p{color: var(--body-text); font-size: var(--fs-body); line-height: 26px;}
+.driveEnergyDisc ul{list-style-type: disc; margin-top: 2em; padding-left: 30px;}
+.driveEnergyDisc ul li{font-size: var(--fs-body); color: var(--body-text);}
+.driveEnergyDisc ul li:not(:last-child){margin-bottom: 16px;}
+
+.portSlideWrapper{max-width: 1712px; width: 100%; margin-left: auto;}
+.psPortSliderBox {margin-top: 5em;}
+/* .psPortSliderBox .psPortSlider .slick-list{padding-left: 335px;} */
+.psProSlideItem{width: 100%; border-radius: 16px; overflow: hidden; display: flex; justify-content: center; margin: 0 8px;}
+.proSlideText{max-width: 85%; width: 100%; margin: auto; inset: 0; position: absolute; top: auto; bottom: -2em; opacity: 0; background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); border-radius: 16px; padding: 1.5em; transition: all 0.5s ease;}
+.psProSlideItem:hover .proSlideText{bottom: 2.5em; opacity: 1;}
+.proSlideText p{color: #f6f6f6; font-size: var(--fs-body); line-height: 26px; font-weight: var(--fw-regular); margin-bottom: 10px;}
+.proSlideText h3{font-size: var(--fs-40); color: var(--body-text); font-weight: var(--fw-regular);}

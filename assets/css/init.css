@@ -17,7 +17,7 @@
    --primary-07: #888888;
 
    --body-text: #d1d1d1;
-   --border: #454545;
+   --border: #3d3d3d;
 
    /* =====================
       Typography
@@ -27,7 +27,7 @@
    --fs-h1: 72px;      
    --fs-56: 64px;       
    --fs-48: 56px;      
-   --fs-40: 48px;      
+   --fs-40: 44px;      
    --fs-32: 36px;      
    --fs-24: 28px;       
    --fs-body: 18px;     
