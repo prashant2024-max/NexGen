@@ -98,7 +98,7 @@
 .psContactInfoBox{display: flex; justify-content: space-between; align-items: center;}
 .contactTxtBox{max-width:40%; width: 100%;}
 .contactTxtBox h2{font-size: var(--fs-40); line-height: 52px; letter-spacing: 0.78px; color: var(--primary-02); font-weight: var(--fw-normal); margin-bottom: 29px; text-transform: uppercase;} 
-.contactWebs li{font-size: var(--fs-body); line-height: 25px; color: var(--primary-02);}
+.contactWebs li{font-size: var(--fs-body); line-height: 25px; color: var(--body-text);}
 .contactWebs li:not(:last-child){padding-bottom: 16px; margin-bottom: 16px; border-bottom: 1px solid var(--primary-02);}
 .contactWebs li span:nth-of-type(1){font-weight: var(--fw-bold);}
 .contactWebs li span a{color: var(--body-text);}
